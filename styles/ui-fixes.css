@@ -65,6 +65,9 @@
 .hero {
   padding-top: 180px;
 }
+.hero_visual::after {
+  display: none;
+}
 .section {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -102,15 +105,36 @@
   align-items: flex-end;
 }
 .footer_contact {
-  display: flex;
-  gap: 18px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
+  display: block;
+  position: static;
+  min-width: 420px;
 }
 .experience_card ul {
   margin: 0;
+}
+.experience_card {
+  display: grid;
+  grid-template-rows: minmax(58px, auto) auto auto 1fr;
+}
+.experience_card h3 {
+  min-height: 58px;
+  margin-bottom: 14px;
+}
+.experience_card .experience_company {
+  margin: 0 0 22px;
+}
+.experience_card .experience_date {
+  margin-bottom: 24px;
+}
+.credentials_grid {
+  align-items: stretch;
+}
+.credentials_grid article {
+  display: grid;
+  grid-template-rows: auto minmax(58px, auto) 1fr;
+}
+.credentials_grid .credential_date {
+  margin-bottom: 24px;
 }
 .footer_social_links {
   display: flex;
@@ -172,8 +196,12 @@
     min-height: 260px;
     padding: 48px 0;
   }
-  .footer_contact {
+.footer_contact {
     justify-content: flex-start;
+    min-width: 0;
+  }
+  .footer_social_links {
+    left: 210px;
   }
   .footer_inner {
     gap: 20px;
@@ -181,4 +209,40 @@
   .footer_inner > span {
     width: 100%;
   }
+}
+.footer_copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer_email {
+  font-size: 1.05rem !important;
+  color: #fff !important;
+}
+.footer_email_address {
+  display: inline;
+  color: #fff;
+  font-size: inherit;
+  transition: color 0.25s ease;
+}
+.footer_email_address:hover {
+  color: #78e4ff;
+}
+.footer_social_links {
+  position: absolute;
+  top: 28px;
+  left: auto;
+  right: 0;
+  gap: 10px;
+}
+.footer_inner {
+  position: relative;
+}
+.credentials_grid article {
+  grid-template-rows: auto 88px minmax(42px, auto);
+  align-content: start;
+}
+.credentials_grid article h3,
+.credentials_grid article p:last-child {
+  margin-top: 0;
 }

@@ -29,6 +29,7 @@ const translations = {
       english: "inglês avançado",
     },
     experience: {
+      period: "Período:",
       title: "Experiência",
       intro:
         "Experiência prática em ambientes produtivos, com foco em evolução de produto e engenharia de software.",
@@ -46,7 +47,7 @@ const translations = {
       },
       react: {
         title: "Estagiário Frontend · React Native",
-        one: "Estudo guiado em frontend com foco em React Native.",
+        one: "Estudo com foco em frontend usando React Native.",
         two: "Desenvolvimento de três projetos práticos e colaboração em equipe ágil.",
       },
     },
@@ -61,12 +62,13 @@ const translations = {
     },
     education: {
       title: "Formação & certificação",
-      in_progress: "EM ANDAMENTO",
+      in_progress: "IFPR · CASCAVEL · EM ANDAMENTO",
       degree: "Tecnologia em Análise e Desenvolvimento de Sistemas",
       school: "Instituto Federal do Paraná (IFPR) · Campus Cascavel",
       certification: "Certificação válida até 2026.",
       english_title: "Inglês avançado",
-      english_body: "Nível C1 no Programa de Ensino de Línguas.",
+      completed: "UNIOESTE · CONCLUÍDO",
+      english_body: "Programa de Ensino e Linguagem (PEL), nível C1.",
     },
     projects: {
       title: "Projeto em destaque",
@@ -76,7 +78,7 @@ const translations = {
         "Uma presença digital com linguagem visual acolhedora e foco em conversão.",
       action: "Visitar projeto ↗",
     },
-    contact: { title: "Vamos construir algo juntos?" },
+    contact: { title: "Vamos construir algo juntos?", email_label: "E-mail para contato:" },
     footer: {
       note: "Feito com HTML, CSS e JavaScript.",
       back_to_top: "Voltar ao topo ↑",
@@ -113,6 +115,7 @@ const translations = {
     },
     experience: {
       title: "Experience",
+      period: "Period:",
       intro:
         "Hands-on experience in production environments, focused on product evolution and software engineering.",
       sante: {
@@ -129,7 +132,7 @@ const translations = {
       },
       react: {
         title: "Frontend Intern · React Native",
-        one: "Completed guided frontend training focused on React Native.",
+        one: "Studied frontend development with a focus on React Native.",
         two: "Built three practical projects and collaborated in an agile team.",
       },
     },
@@ -149,7 +152,8 @@ const translations = {
       school: "Federal Institute of Paraná (IFPR) · Cascavel Campus",
       certification: "Certification valid through 2026.",
       english_title: "Advanced English",
-      english_body: "C1 level through the Language Teaching Program.",
+      completed: "UNIOESTE · COMPLETED",
+      english_body: "Language Teaching Program (PEL), C1 level.",
     },
     projects: {
       title: "Featured project",
@@ -159,7 +163,7 @@ const translations = {
         "A welcoming digital presence focused on clear communication and conversion.",
       action: "Visit project ↗",
     },
-    contact: { title: "Let’s build something together." },
+    contact: { title: "Let’s build something together.", email_label: "Contact email:" },
     footer: {
       note: "Built with HTML, CSS, and JavaScript.",
       back_to_top: "Back to top ↑",
